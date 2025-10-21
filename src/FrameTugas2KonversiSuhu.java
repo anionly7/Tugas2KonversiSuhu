@@ -109,9 +109,6 @@ public class FrameTugas2KonversiSuhu extends javax.swing.JFrame {
             }
         });
         txtInput.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtInputKeyReleased(evt);
-            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtInputKeyTyped(evt);
             }
@@ -123,11 +120,6 @@ public class FrameTugas2KonversiSuhu extends javax.swing.JFrame {
         buttonGroup1.add(rbtnCelcius);
         rbtnCelcius.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         rbtnCelcius.setText("Celcius");
-        rbtnCelcius.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rbtnCelciusActionPerformed(evt);
-            }
-        });
 
         buttonGroup1.add(rbtnFahrenheit);
         rbtnFahrenheit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -286,10 +278,6 @@ public class FrameTugas2KonversiSuhu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rbtnCelciusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnCelciusActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rbtnCelciusActionPerformed
-
     private void btnKonversiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKonversiActionPerformed
         try {
             buttonKonversiKlik = true;
@@ -392,10 +380,6 @@ public class FrameTugas2KonversiSuhu extends javax.swing.JFrame {
         labelOutput.setText(""); 
         buttonKonversiKlik = false;// TODO add your handling code here:
     }//GEN-LAST:event_btnResetActionPerformed
-
-    private void txtInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtInputKeyReleased
-
-    }//GEN-LAST:event_txtInputKeyReleased
 
     /**
      * @param args the command line arguments
